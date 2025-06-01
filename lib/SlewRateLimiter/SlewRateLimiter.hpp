@@ -35,8 +35,7 @@ class SlewRateLimiter {
 
 
     /**
-     * @brief Define a new SlewRateLimiter given the maximum change 
-     *        in positive and negative directions
+     * @brief Define a new SlewRateLimiter given the maximum change in positive and negative directions
      * 
      * @param maxPosChange Maximum positive change per second
      * @param maxNegChange Maximum negative change per second

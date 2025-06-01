@@ -14,16 +14,16 @@
  * @brief RC channels values
  */
 enum ChannelRC {
-  RIGHT_X = 0,
-  RIGHT_Y,
-  LEFT_Y,
-  LEFT_X,
-  SWA,
-  SWD,
-  SWB, 
-  SWC,
-  VRA,
-  VRB
+  RIGHT_X = 0, // Right joystick x-axis
+  RIGHT_Y,     // Right joystick y-axis
+  LEFT_Y,      // Left joystick y-axis
+  LEFT_X,      // Left joystick x-axis
+  SWA,         // Outer left switch 
+  SWD,         // Outer right switch
+  SWB,         // Inner left switch 
+  SWC,         // Inner right switch
+  VRA,         // Left variable knob
+  VRB          // Right variable knob
 };
 
 const int numChannels = 10; // Number of channels on the FlySky FS-i6X controller 
@@ -72,7 +72,7 @@ class ControlRC {
     IBusBM iBus; // iBus object for control over communications
 
   public:
-    static const unsigned long iBusBaudrate = 115200;
+    static const unsigned long iBusBaudrate = 115200; // Serial monitor baudrate for the iBus 
 
     /**
      * @brief Type of mapping for setter method
@@ -112,7 +112,7 @@ class ControlRC {
      * 
      * @param channel Channel to get the value of
      * @param mapChannel Condition for mapping the value from the channel
-     * @return Value recieved, and possibly mapped, from the channel  
+     * @return Value received, and possibly mapped, from the channel  
      */
     int getChannelValue(ChannelRC channel, bool mapChannel = true);
 
@@ -137,7 +137,7 @@ class ControlRC {
      * @note Effectively the same as getChannelValue(ChannelRC::LEFT_Y)
      * 
      * @param mapThrottle Condition for if to apply the throttle mapping (Default true)
-     * @return Value of the throttle (Channel 3)
+     * @return Value of the throttle axis (Channel 3, left joystick y-axis)
      */
     int getThrottle(bool mapThrottle);
 
