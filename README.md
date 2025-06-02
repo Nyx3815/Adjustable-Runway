@@ -2,12 +2,12 @@
 
 **Table of Contents**
 
-* [Important Reminders](#important-reminders)
-* [Module Overview](#module-overview)
-  *  [ControlRC](#controlrc)
-  * [PIDCommand](#pidcommand)
-  * [SlewRateLimiter](#slewratelimiter)
-* [Runtime Flow](#runtime-flow)
+1. [Important Reminders](#important-reminders)
+2. [Module Overview](#module-overview)
+    *  [ControlRC](#controlrc)
+    * [PIDCommand](#pidcommand)
+    * [SlewRateLimiter](#slewratelimiter)
+3. [Runtime Flow](#runtime-flow)
 
 ---
 
