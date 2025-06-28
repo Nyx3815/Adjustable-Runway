@@ -1,11 +1,20 @@
+// External Libraries 
 #include <Arduino.h>
 #include <Servo.h>
 
+// Custom Libraries
 #include <ControlRC.hpp>
 #include <SlewRateLimiter.hpp>
 
-// REMEBER -- Unplug the reciever from pin 0 (RX) when uploading code
-// Note >> Run the serial monitor at a baudrate of 115200 to work properly
+
+/** 
+ * General Reminders:
+ *   1. Unplug the reciever from pin 0 (RX) when uploading code
+ *   2. Run the serial monitor at a baudrate of 115200 to work properly
+ * 
+ * For the GitHub page, go to https://github.com/Nyx3815/Adjustable-Runway
+**/ 
+
 
 const double sampleRate = 5; // Number of receiver samples per second
 ControlRC rcTest;
@@ -14,7 +23,7 @@ ControlRC rcTest;
 const int joysitckMap[2] = {0, 180};    // Maps the standard joysticks
 const int throttleMap[2] = {0, 180};    // Maps the throttle joystick
 const int switchMap[2] = {0, 180};      // Maps the basic switches
-const int cSwitchMap[3] = {0, 15, 30};  // Maps the SWC switch
+const int cSwitchMap[3] = {0, 90, 180}; // Maps the SWC switch
 const int knobMap[2] = {0, 180};        // Maps the knobs
 
 const int motorPin = 3; 
@@ -32,7 +41,7 @@ bool ledState = false;
 
 const double motorChangeLimit = 30;
 bool isRateLimited = true;
-SlewRateLimiter rateLimit(motorChangeLimit); // Sets a SlewRateLimiter with a maximum change of 50 units
+SlewRateLimiter rateLimit(motorChangeLimit); // Creates a SlewRateLimiter with a maximum change limit defined above 
 ChannelRC limiterChannel = ChannelRC::SWA;
 
 Servo esc;
@@ -77,6 +86,7 @@ void loop() {
   // Updates the values of each channel at the start of the loop 
   if ((currentTime - lastSample) >= (1000 * (1 / sampleRate))) {
     rcTest.update();
+    lastSample = currentTime;
   }
 
   // Updates the motor enable state and rate limiter state

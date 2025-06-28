@@ -73,7 +73,7 @@ int ControlRC::getChannelValue(ChannelRC channel, bool mapChannel) {
       case (ChannelRC::SWC):
         if (*channelVal[channel] == minRC) {
           return cSwitchMap[0];
-        } else if (*channelVal[channel] == 1500) {
+        } else if (*channelVal[channel] == ((minRC + maxRC) / 2)) {
           return cSwitchMap[1];
         } else {
           return cSwitchMap[2];
