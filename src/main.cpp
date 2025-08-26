@@ -37,7 +37,7 @@ double lastBlink;
 
 const int ledPin = 2;     // LED pin
 const double ledFreq = 1; // Blinks per second
-bool ledState = false;
+bool ledState = true;     // Current on / off state of the LED
 
 const double motorChangeLimit = 30;
 bool isRateLimited = true;

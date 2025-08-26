@@ -120,6 +120,8 @@ class ControlRC {
     /**
      * @brief Gets the value of a channel given a method to map to non-integer types
      * 
+     * @note This method can also be used to apply mapping curves 
+     * 
      * @tparam T Type to map to 
      * @param channel Channel to get the value from 
      * @param mapFunction Method to use to map the value (Must only take in a single int)
