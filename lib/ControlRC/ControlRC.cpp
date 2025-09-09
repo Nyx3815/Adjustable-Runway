@@ -109,7 +109,7 @@ int** ControlRC::getValuePointerArray() {
 
 void ControlRC::printChannels(bool isMapped) {
   for (int i = 0; i < numChannels; i++) {
-    Serial.print(i < 10 ? "Ch[0" : "CH[");
+    Serial.print((i + 1) < 10 ? "Ch[0" : "CH[");
     Serial.print(i + 1);
     Serial.print("] - ");
     Serial.print(getChannelValue((ChannelRC)i, isMapped));

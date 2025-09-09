@@ -11,6 +11,7 @@
  * General Reminders:
  *   1. Unplug the reciever from pin 0 (RX) when uploading code
  *   2. Run the serial monitor at a baudrate of 115200 to work properly
+ *   3. Currently, the code is designed for an Arudino Uno R3
  * 
  * For the GitHub page, go to https://github.com/Nyx3815/Adjustable-Runway
 **/ 
