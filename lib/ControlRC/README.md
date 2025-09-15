@@ -53,7 +53,7 @@ Effectively, this can be represented by an equation defined as
         0, & n = 1000 \\
         1, & n = 2000
       \end{array}
-    \right\}
+    \right.
  \end{equation}
 ```
 
