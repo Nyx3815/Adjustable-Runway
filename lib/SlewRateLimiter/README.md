@@ -22,7 +22,11 @@ The calculate method works by finding the maximum allowed values in either the p
 
 Effectively, this is defined by the following:
 
-$\text{Let f(t) be a function of time giving the current value}\\\text{The change in value } \frac{df}{dt} \text{ can be defined as a piecewise funciton}\\\text{With a constant for time } t_0 \text{ we can define a function of time change}\\\text{Using two constants -- } \Delta f_{neg} \text{ and } \Delta f_{pos} \text{ -- we can define } \frac{df}{dt} \text{ as}$
+$\text{Let f(t) be a function of time giving the current value}$
+$\text{The change in value } \frac{df}{dt} \text{ can be defined as a piecewise funciton}$
+$\text{With a constant for time } t_0 \text{ we can define a function of time change}$
+$\text{Using two constants -- } \Delta f_{neg} \text{ and } \Delta f_{pos} \text{ -- we can define } \frac{df}{dt} \text{ as}$
+
 $$
 \begin{equation}
   \frac{df}{dt} =
