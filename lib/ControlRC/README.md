@@ -48,10 +48,12 @@ Effectively, this can be represented by an equation defined as
 $$
 \begin{equation}
   f(n) =
-    \left\{\begin{array}{lr}
-      0, & n = 1000 \\
-      1, & n = 2000
-    \end{array}\right.
+    \left\{
+      \begin{array}{lr}
+        0, & n = 1000 \\
+        1, & n = 2000
+      \end{array}
+    \right.
  \end{equation}
 $$
 

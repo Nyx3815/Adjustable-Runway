@@ -68,10 +68,12 @@ $\text{Given those values and the integral gain, the integral term } I(t) \text{
 $$
 \begin{equation}
   I(t) =
-    \left\{\begin{array}{lr}
-      k_i \int _0^t e(\tau)d\tau, & |\,e(t)\,| < E \\
-      0, & |\,e(t)\,| \ge E
-    \end{array}\right.
+    \left\{
+      \begin{array}{lr}
+        k_i \int _0^t e(\tau)d\tau, & |\,e(t)\,| < E \\
+        0, & |\,e(t)\,| \ge E
+      \end{array}
+    \right.
  \end{equation}
 $$
 
