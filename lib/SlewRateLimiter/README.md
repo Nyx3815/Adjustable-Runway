@@ -30,7 +30,7 @@ $\text{With a constant for time } t_0 \text{ we can define a function of time ch
 
 $\text{Using two constants -- } \Delta f_{neg} \text{ and } \Delta f_{pos} \text{ -- we can define } \frac{df}{dt} \text{ as}$
 
-$$
+```math
 \begin{equation}
   \frac{df}{dt} = 
     \left\{
@@ -39,9 +39,9 @@ $$
         f(t + t_0), & \Delta f_{neg} < f(t + t_0) < \Delta f_{pos} \\
         \Delta f_{pos}, & f(t + t_0) > \Delta f_{pos}
       \end{array}
-    \right\}
+    \right.
  \end{equation}
-$$
+```
 
 Using $\text{Equation 1}$, we can calculate the allowed change, $\frac{df}{dt}$, since the previous iteration 
 

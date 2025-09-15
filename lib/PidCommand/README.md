@@ -65,7 +65,7 @@ $\text{Let } E \text{ be an acceptable value of error where the integral term ca
 
 $\text{Given those values and the integral gain, the integral term } I(t) \text{ can be defined as}$
 
-$$
+```math
 \begin{equation}
   I(t) =
     \left\{
@@ -75,7 +75,7 @@ $$
       \end{array}
     \right\}
  \end{equation}
-$$
+```
 
 $\text{Lastly, given the derivative gain, the derivative term } D(t) \text{ can be defined as}$
 

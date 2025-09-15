@@ -45,7 +45,7 @@ The static method, `ControlRC::mapSwitches(int val)` is a method used to map the
 
 Effectively, this can be represented by an equation defined as
 
-$$
+```math
 \begin{equation}
   f(n) =
     \left\{
@@ -55,7 +55,7 @@ $$
       \end{array}
     \right\}
  \end{equation}
-$$
+```
 
 given that $1000$ is the minimum value from the RC transmitter and $2000$ is the maximum value from the transmitter
 
