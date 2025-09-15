@@ -51,8 +51,7 @@ The `calculate()` method runs through and does the math for the current value of
 
 There are three functions which are summed to find the output, which are defined as follows:
 
-$\text{Let } e(t) \text{ be the error at time } t \text{ and } k_p \text{, } k_i \text{, and } k_d \text{ be PID gain constants}$
-
+$\text{Let } e(t) \text{ be the error at time } t \text{ and } k_p \text{, } k_i \text{, and } k_d \text{ be PID gain constants}$\
 $\text{Given the proportional gain, the proportional term } P(t) \text{ is defined as}$
 
 $$
@@ -61,9 +60,8 @@ $$
 \end{equation}
 $$
 
-$\text{Let } E \text{ be an acceptable value of error where the integral term can be applied}$
-$\text{Additionally, let } s(t) \text{ be the current setpoint value at time t}$
-
+$\text{Let } E \text{ be an acceptable value of error where the integral term can be applied}$\
+$\text{Additionally, let } s(t) \text{ be the current setpoint value at time t}$\
 $\text{Given those values and the integral gain, the integral term } I(t) \text{ can be defined as}$
 
 ```math
@@ -86,7 +84,7 @@ $$
 \end{equation}
 $$
 
-$\text{Let } u(t) \text{ be the output of the PID system}$
+$\text{Let } u(t) \text{ be the output of the PID system}$\
 $\text{The final output is the sum of each term, which can be defined as}$
 
 $$
