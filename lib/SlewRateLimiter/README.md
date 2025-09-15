@@ -23,9 +23,7 @@ The calculate method works by finding the maximum allowed values in either the p
 Effectively, this is defined by the following:
 
 $\text{Let f(t) be a function of time giving the current value}$
-
 $\text{The change in value } \frac{df}{dt} \text{ can be defined as a piecewise funciton}$
-
 $\text{With a constant for time } t_0 \text{ we can define a function of time change}$
 
 $\text{Using two constants -- } \Delta f_{neg} \text{ and } \Delta f_{pos} \text{ -- we can define } \frac{df}{dt} \text{ as}$
@@ -49,7 +47,7 @@ Using $\text{Equation 1}$, we can calculate the allowed change, $\frac{df}{dt}$,
 
 ## Set Rate
 
-The set rate method is much more simple than `calculate()`. It allows you to set the allowed amount of value change for the `SlewRateLimiter` as a whole. Within the methods, there are two ways to do this. Using the same notation as [$\text{Equation 1}$](#calculate), those two ways are as follows:
+The set rate method is much more simple than `calculate()`. It allows you to set the allowed amount of value change for the `SlewRateLimiter` as a whole. Within the methods, there are two ways to do this. Using the same notation as [Equation 1](#calculate), those two ways are as follows:
   1. `setRate(double rate)`
       - $\Delta f_{pos} = \Delta f_{neg} = rate$
   2. `setRate(double pos, double neg)`: 

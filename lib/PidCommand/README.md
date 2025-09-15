@@ -61,7 +61,8 @@ $$
 \end{equation}
 $$
 
-$\text{Let } E \text{ be an acceptable value of error where the integral term can be applied}\\ \text{Additionally, let } s(t) \text{ be the current setpoint value at time t}$
+$\text{Let } E \text{ be an acceptable value of error where the integral term can be applied}$
+$\text{Additionally, let } s(t) \text{ be the current setpoint value at time t}$
 
 $\text{Given those values and the integral gain, the integral term } I(t) \text{ can be defined as}$
 
@@ -85,7 +86,8 @@ $$
 \end{equation}
 $$
 
-$\text{Let } u(t) \text{ be the output of the PID system}\\ \text{The final output is the sum of each term, which can be defined as}$
+$\text{Let } u(t) \text{ be the output of the PID system}$
+$\text{The final output is the sum of each term, which can be defined as}$
 
 $$
 \begin{equation}
