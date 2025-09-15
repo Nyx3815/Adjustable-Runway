@@ -1,4 +1,4 @@
-## Adjustable Runway Arduino Firmware
+# Adjustable Runway Arduino Firmware
 
 **Table of Contents**
 
@@ -20,17 +20,17 @@
   - Turn the UART switch back to the on state
   - Disconnect the cable going from your computer to the USB port
 
-**Remeber:** When running the serial monitor for output, run a baudrate of 115200
+**Remeber:** When running the serial monitor for output, run a baudrate of 115200.
 
 ---
 
 ## Module Overview
 
-The following modules can be found in the `lib/` folder 
+The following modules can be found in the `lib/` folder. 
 
 ### ControlRC
 
-The `ControlRC` module is used to receive the values from a FlySky FS-i6X RC transmitter. The module also contains an enum, `ChannelRC`, which is used for accessing control channels
+The `ControlRC` module is used to receive the values from a FlySky FS-i6X RC transmitter. The module also contains an enum, `ChannelRC`, which is used for accessing control channels.
 
 The channels and their enum counterparts, by default, are as follows:
 
@@ -54,9 +54,9 @@ The channels and their enum counterparts, by default, are as follows:
 The `PIDCommand` module is used to create and control commands to use PID to control outputs to things like motors. 
 
 Important methods:
-- `calculate()` - Updates the value of the output using the input and setpoint data
-- `atSetpoint()` - Stops the PID command if the error and error rates are within a certain limit
-- `eStop()` - In case of emergency, stops the PID command until the Arduino is reset
+- `calculate()` - Updates the value of the output using the input and setpoint data.
+- `atSetpoint()` - Stops the PID command if the error and error rates are within a certain limit.
+- `eStop()` - In case of emergency, stops the PID command until the Arduino is reset.
 
 ---
 
@@ -65,8 +65,8 @@ Important methods:
 The `SlewRateLimiter` module is used to create a limiter for how much a variable can change in a given amount of time.
 
 Important Methods:
-- `calulate(double target)` - Calculates the allowed amount the value can change
-- `setRate(double pos, double neg)` - Sets the amount the value can change in either the positive direction or the negative direction 
+- `calulate(double target)` - Calculates the allowed amount the value can change.
+- `setRate(double pos, double neg)` - Sets the amount the value can change in either the positive direction or the negative direction.
 
 ---
 

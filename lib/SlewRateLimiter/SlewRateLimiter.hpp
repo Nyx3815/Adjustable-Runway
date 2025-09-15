@@ -22,8 +22,7 @@ class SlewRateLimiter {
     double timeChange;  // Change in time since previous iteration
 
     double lastValue;   // Value of the number at the previous iteration
-    double maxDelta;    // Maximum change in the value since the previous iteration
-    double delta;       // Change in the value since the previous iteration    
+    double maxDelta;    // Maximum change in the value since the previous iteration 
 
   public:
     /**
