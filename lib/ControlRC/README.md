@@ -53,7 +53,7 @@ $$
         0, & n = 1000 \\
         1, & n = 2000
       \end{array}
-    \right.
+    \right\}
  \end{equation}
 $$
 

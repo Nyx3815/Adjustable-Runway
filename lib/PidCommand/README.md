@@ -73,7 +73,7 @@ $$
         k_i \int _0^t e(\tau)d\tau, & |\,e(t)\,| < E \\
         0, & |\,e(t)\,| \ge E
       \end{array}
-    \right.
+    \right\}
  \end{equation}
 $$
 

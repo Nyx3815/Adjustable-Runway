@@ -39,7 +39,7 @@ $$
         f(t + t_0), & \Delta f_{neg} < f(t + t_0) < \Delta f_{pos} \\
         \Delta f_{pos}, & f(t + t_0) > \Delta f_{pos}
       \end{array}
-    \right.
+    \right\}
  \end{equation}
 $$
 
